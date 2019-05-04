@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1448218653 source:c:\users\2iiz\desktop\c\compteur de caracters\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

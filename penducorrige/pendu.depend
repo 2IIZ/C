@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1248093376 source:c:\users\2iiz\desktop\penducorrige\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"dico.h"
+
+1248093254 c:\users\2iiz\desktop\penducorrige\dico.h
+
+1248094090 source:c:\users\2iiz\desktop\penducorrige\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"dico.h"
+

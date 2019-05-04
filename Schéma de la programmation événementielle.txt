@@ -1,0 +1,25 @@
+Schéma de la programmation événementielle
+
+Quand vous codez un programme qui réagit aux événements (comme on va le faire ici), vous devez suivre la plupart du
+ temps le même « schéma » de code.
+Ce schéma est à connaître par cœur. Le voici :
+
+while (continuer)
+{
+    SDL_WaitEvent(&event);
+    switch(event.type)
+    {
+        case SDL_TRUC: /* Gestion des événements de type TRUC */
+        case SDL_BIDULE: /* Gestion des événements de type BIDULE */
+    }
+    
+    /* On efface l'écran (ici fond blanc) : */
+    SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 255, 255, 255)); 
+    
+    /* On fait tous les SDL_BlitSurface nécessaires pour coller les surfaces à l'écran */
+
+    /* On met à jour l'affichage : */
+    SDL_Flip(ecran);
+}
+Voilà dans les grandes lignes la forme de la boucle principale d'un programme SDL.
+On boucle tant qu'on n'a pas demandé à arrêter le programme.
